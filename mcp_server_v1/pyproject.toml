@@ -7,9 +7,7 @@ authors = [
     { name = "Hb_W", email = "hugobarillasvi@hotmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = [
-    "mcp[cli]>=2.0.0",
-]
+dependencies = []
 
 [project.scripts]
 mcp-server-v1 = "mcp_server_v1:main"
