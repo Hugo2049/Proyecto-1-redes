@@ -78,3 +78,11 @@ The server will print a ready message to `stderr` and then wait for JSON-RPC mes
 The project was scaffolded with `uv` and the first connectivity test against Claude Desktop was done following [this video](https://www.youtube.com/watch?v=-8k9lGpGQ6g&t=181s). That tutorial builds the server on top of the official `mcp` SDK, which abstracts away the JSON-RPC protocol — not allowed for this assignment, since the goal is to implement the message exchange manually. After confirming the basic setup worked, Claude Code was used to rewrite `main.py` from scratch as a plain JSON-RPC 2.0 handler (`initialize`, `tools/list`, `tools/call`) with no MCP SDK dependency, and to seed it with the sample data (specialties, doctors, availability) and the six tools defined in the project proposal.
 
 The trickiest part (though not too difficult) was getting Claude Desktop to actually detect the server: it didn't show up in the Connectors list during the first attempts. It turned out the packaged version of Claude Desktop reads its config from a different path than the classic `%APPDATA%\Claude` location. Once the config file was updated in the right place, the server connected and its tools became available.
+
+
+<img width="1355" height="1152" alt="image" src="https://github.com/user-attachments/assets/9ce130a0-bf03-47d6-bfb1-f089961c84fc" />
+
+
+<img width="1372" height="1133" alt="image" src="https://github.com/user-attachments/assets/b7f276ea-02a0-45c8-bbe0-ff488efe0da4" />
+
+
