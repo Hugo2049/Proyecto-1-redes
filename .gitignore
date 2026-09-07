@@ -219,3 +219,11 @@ __marimo__/
 
 # Local test/scratch files
 pruebas/
+
+# Chatbot runtime artifacts
+chatbot/logs/
+chatbot/workspace/
+
+# Cloudflare Workers local dev/build artifacts
+mcp_server_remote/.wrangler/
+mcp_server_remote/node_modules/

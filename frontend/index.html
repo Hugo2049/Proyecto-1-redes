@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinic Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <div>
+        <h1>Clinic Assistant</h1>
+        <p>Chatbot host over MCP, CC3067 Redes project</p>
+      </div>
+    </div>
+    <button id="toggle-sidebar" class="icon-button" aria-label="Toggle tools panel">Tools</button>
+  </header>
+
+  <div class="body">
+
+    <aside id="sidebar" class="sidebar">
+      <h2>Connected servers</h2>
+      <ul id="server-list" class="server-list">
+        <li class="muted">Loading…</li>
+      </ul>
+
+      <h2>Available tools</h2>
+      <ul id="tool-list" class="tool-list">
+        <li class="muted">Loading…</li>
+      </ul>
+    </aside>
+
+    <main class="chat">
+      <div id="messages" class="messages">
+        <div class="message assistant">
+          <div class="bubble">
+            Hello, I am the clinic assistant. I can check specialties, doctors,
+            availability, and book, cancel, or reschedule appointments. I can
+            also work with files and git if you ask me to. What do you need?
+          </div>
+        </div>
+      </div>
+
+      <form id="chat-form" class="composer">
+        <input
+          id="chat-input"
+          type="text"
+          autocomplete="off"
+          placeholder="Type a message…"
+          aria-label="Message"
+        >
+        <button type="submit" id="send-button">Send</button>
+      </form>
+    </main>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
